@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "PDW Notify",
+  "version": "1.0.2",
+  "description": "The Patriots.win Notifier (Unofficial)",
+  "permissions": ["alarms", "storage", "notifications", "scripting", "tabs"],
+  "host_permissions": ["https://patriots.win/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "32": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icon.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
